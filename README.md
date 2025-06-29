@@ -85,7 +85,7 @@ You can change or reset using the "Create New Admin" menu option.
 4. GUI using JavaFX or Web-based frontend
 5. Encrypted password handling
 
-🧑‍💻 Author
+🧑‍💻 Author -
 Aditya Mishra
 
 
