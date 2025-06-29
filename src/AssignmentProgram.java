@@ -16,7 +16,7 @@ public class AssignmentProgram {
         while (true) {
             displayInitialMenu();
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine(); 
             switch (choice) {
                 case 1:
                     adminLogin(scanner);
@@ -36,7 +36,6 @@ public class AssignmentProgram {
             }
         }
     }
-
     private static void displayInitialMenu() {
         System.out.println("\n--- Welcome to ValidRail – Admin & User Validation System ---");
         System.out.println("Select one of the following options:");
@@ -83,7 +82,6 @@ public class AssignmentProgram {
             }
         }
     }
-
     private static void createNewAdmin(Scanner scanner) {
         Properties properties = new Properties();
 
