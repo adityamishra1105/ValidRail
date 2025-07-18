@@ -121,7 +121,7 @@ public class AssignmentProgram {
         }
     }
 
-    private static void displayMainMenu(Scanner scanner) {
+    private static void displayMainMenu(Scanner sc) {
         while (true) {
             System.out.println("\n--- Admin Main Menu ---");
             System.out.println("1. User Registration Fields Validation");
@@ -132,25 +132,23 @@ public class AssignmentProgram {
             System.out.println("10. Exit");
             System.out.print("Enter your choice [1-10]: ");
 
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+            int choice = sc.nextInt();
+            sc.nextLine();
 
             if (choice == 10) {
                 System.out.println("Returning to initial menu...");
                 return;
             }
-
             switch (choice) {
                 case 1:
-                    userRegistration(scanner);
+                    userRegistration(sc);
                     break;
                 default:
                     System.out.println("Option under development. Please try another.");
             }
         }
     }
-
-    private static void userRegistration(Scanner scanner) {
+    private static void userRegistration(Scanner sc) {
         while (true) {
             System.out.print("Name: ");
             String name = scanner.nextLine();
