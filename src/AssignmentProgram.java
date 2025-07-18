@@ -88,10 +88,10 @@ public class AssignmentProgram {
         Properties properties = new Properties();
 
         System.out.print("Enter new Admin User Id: ");
-        String newUserId = scanner.nextLine();
+        String newUserId = sc.nextLine();
 
         System.out.print("Enter new Admin Password: ");
-        String newPassword = scanner.nextLine();
+        String newPassword = sc.nextLine();
 
         properties.setProperty("adminUserId", newUserId);
         properties.setProperty("adminPassword", newPassword);
@@ -104,11 +104,11 @@ public class AssignmentProgram {
         }
     }
 
-    private static void updateAdminCredentials(Scanner scanner, Properties properties) {
+    private static void updateAdminCredentials(Scanner sc, Properties properties) {
         System.out.print("Enter new Admin User Id: ");
-        String newUserId = scanner.nextLine();
+        String newUserId = sc.nextLine();
         System.out.print("Enter new Admin Password: ");
-        String newPassword = scanner.nextLine();
+        String newPassword = sc.nextLine();
 
         properties.setProperty("adminUserId", newUserId);
         properties.setProperty("adminPassword", newPassword);
