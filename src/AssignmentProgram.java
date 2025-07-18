@@ -21,17 +21,17 @@ public class AssignmentProgram {
             sc.nextLine(); 
             switch (choice) {
                 case 1:
-                    adminLogin(scanner);
+                    adminLogin(sc);
                     break;
                 case 2:
                     System.out.println("View User Login: Coming Soon!");
                     break;
                 case 3:
-                    createNewAdmin(scanner);
+                    createNewAdmin(sc);
                     break;
                 case 100:
                     System.out.println("Exiting...");
-                    scanner.close();
+                    sc.close();
                     return;
                 default:
                     System.out.println("Invalid choice. Please try again.");
@@ -48,7 +48,7 @@ public class AssignmentProgram {
         System.out.print("Enter your choice [1,2,3,100]: ");
     }
 
-    private static void adminLogin(Scanner scanner) {
+    private static void adminLogin(Scanner sc) {
         Properties properties = new Properties();
         try (FileInputStream fis = new FileInputStream(PROPERTIES_FILE)) {
             properties.load(fis);
@@ -61,22 +61,22 @@ public class AssignmentProgram {
         String storedPassword = properties.getProperty("adminPassword");
 
         System.out.print("Enter Admin User Id: ");
-        String userId = scanner.nextLine();
+        String userId = sc.nextLine();
 
         System.out.print("Enter Admin Password: ");
-        String password = scanner.nextLine();
+        String password = sc.nextLine();
 
         if (storedUserId != null && storedPassword != null &&
             storedUserId.equals(userId) && storedPassword.equals(password)) {
-            updateAdminCredentials(scanner, properties);
-            displayMainMenu(scanner);
+            updateAdminCredentials(sc, properties);
+            displayMainMenu(sc);
         } else {
             System.out.println("Credential not matched. Do you want to retry login?");
             System.out.println("Enter 1 to retry or 100 to go to main menu:");
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+            int choice = sc.nextInt();
+            sc.nextLine();
             if (choice == 1) {
-                adminLogin(scanner);
+                adminLogin(sc);
             } else if (choice == 100) {
                 return;
             } else {
@@ -84,7 +84,7 @@ public class AssignmentProgram {
             }
         }
     }
-    private static void createNewAdmin(Scanner scanner) {
+    private static void createNewAdmin(Scanner sc) {
         Properties properties = new Properties();
 
         System.out.print("Enter new Admin User Id: ");
