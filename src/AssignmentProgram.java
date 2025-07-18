@@ -151,27 +151,27 @@ public class AssignmentProgram {
     private static void userRegistration(Scanner sc) {
         while (true) {
             System.out.print("Name: ");
-            String name = scanner.nextLine();
+            String name = sc.nextLine();
             System.out.print("Date Of Birth [dd/mm/yyyy]: ");
-            String dob = scanner.nextLine();
+            String dob = sc.nextLine();
             System.out.print("Gender [Male(M)/Female(F)]: ");
-            String gender = scanner.nextLine();
+            String gender = sc.nextLine();
             System.out.print("Mobile no with ISD: ");
-            String mobile = scanner.nextLine();
+            String mobile = sc.nextLine();
             System.out.print("Email Id: ");
-            String email = scanner.nextLine();
+            String email = sc.nextLine();
             System.out.print("Address HouseNo: ");
-            String houseNo = scanner.nextLine();
+            String houseNo = sc.nextLine();
             System.out.print("Street: ");
-            String street = scanner.nextLine();
+            String street = sc.nextLine();
             System.out.print("Post Office: ");
-            String postOffice = scanner.nextLine();
+            String postOffice = sc.nextLine();
             System.out.print("PinCode: ");
-            String pinCode = scanner.nextLine();
+            String pinCode = sc.nextLine();
             System.out.print("State: ");
-            String state = scanner.nextLine();
+            String state = sc.nextLine();
             System.out.print("Country Name: ");
-            String country = scanner.nextLine();
+            String country = sc.nextLine();
 
             StringBuilder errors = new StringBuilder();
 
@@ -190,8 +190,8 @@ public class AssignmentProgram {
             if (errors.length() > 0) {
                 System.out.println("\nErrors:\n" + errors);
                 System.out.println("Do you want to retry? Enter 1 to retry or 100 to return:");
-                int choice = scanner.nextInt();
-                scanner.nextLine();
+                int choice = sc.nextInt();
+                sc.nextLine();
                 if (choice == 1) continue;
                 else return;
             } else {
