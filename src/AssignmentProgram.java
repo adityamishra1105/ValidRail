@@ -11,12 +11,14 @@ public class AssignmentProgram {
     private static final String PROPERTIES_FILE = "E:\\ValidRail – Admin & User Validation System (Java CLI)\\resources\\userLogin.properties";
     private static final String USERS_FILE = "E:\\ValidRail – Admin & User Validation System (Java CLI)\\resources\\users.txt";
 
+    // the above addresses will be as per your saved file location, so change it accordingly
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         while (true) {
             displayInitialMenu();
-            int choice = scanner.nextInt();
-            scanner.nextLine(); 
+            int choice = sc.nextInt();
+            sc.nextLine(); 
             switch (choice) {
                 case 1:
                     adminLogin(scanner);
