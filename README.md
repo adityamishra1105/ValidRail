@@ -36,7 +36,7 @@ Railway systems require secure and structured user data entry. This project simu
 ---
 
 ## 📁 Folder Structure
-
+<pre>
 ValidRail/
 ├── src/
 │ └── AssignmentProgram.java
@@ -46,7 +46,7 @@ ValidRail/
 ├── .gitignore
 ├── README.md
 └── LICENSE
-
+</pre>pre>
 
 
 ---
@@ -87,5 +87,6 @@ You can change or reset using the "Create New Admin" menu option.
 
 🧑‍💻 Author -
 Aditya Mishra
+
 
 
