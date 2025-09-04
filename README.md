@@ -1,11 +1,11 @@
-# 🚆 ValidRail – Admin & User Validation System (Java CLI)
+# ValidRail – Admin & User Validation System (Java CLI)
 
 ValidRail is a **Java-based command-line application** that simulates a secure user validation and registration system for a railway portal.  
 It includes admin login, credential updates, full input validation, and file-based data persistence.
 
 ---
 
-## 🧠 Problem Statement
+## Problem Statement
 
 Railway systems require secure and structured user data entry. This project simulates an **admin-managed registration system** where:
 - Admin credentials are validated and updatable
@@ -14,19 +14,19 @@ Railway systems require secure and structured user data entry. This project simu
 
 ---
 
-## 💻 Features
+## Features
 
-- ✅ Admin Login via `.properties` file  
-- ✅ Create New Admin users from the CLI  
-- ✅ Full User Registration Form with Validation  
-- ✅ Retry on invalid input  
-- ✅ Stores data in `users.txt`  
-- ✅ Menu-driven navigation  
-- ✅ Modular & clean Java code
+- Admin Login via `.properties` file  
+- Create New Admin users from the CLI  
+- Full User Registration Form with Validation  
+- Retry on invalid input  
+- Stores data in `users.txt`  
+- Menu-driven navigation  
+- Modular & clean Java code
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Java (Core, CLI)
 - File I/O (`BufferedWriter`, `Properties`)
@@ -35,7 +35,7 @@ Railway systems require secure and structured user data entry. This project simu
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 <pre>
 ValidRail/
 ├── src/
@@ -51,7 +51,7 @@ ValidRail/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. **Clone this repo**
    ```bash
@@ -67,7 +67,7 @@ java AssignmentProgram
 
 
 
-🔐 Admin Credentials
+## Admin Credentials
 Default credentials stored in resources/userLogin.properties
 
 properties
@@ -78,15 +78,17 @@ adminPassword=admin123
 You can change or reset using the "Create New Admin" menu option.
 
 
-📌 Future Enhancements
+## Future Enhancements
 1. Switch from File to PostgreSQL DB using JDBC
 2. DAO design pattern
 3. Add booking/ticketing modules
 4. GUI using JavaFX or Web-based frontend
 5. Encrypted password handling
 
-🧑‍💻 Author -
-Aditya Mishra
+## By 
+Aditya Mishra. 
+Happy Coding </>.
+
 
 
 
