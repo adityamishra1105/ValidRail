@@ -1,7 +1,6 @@
 # ValidRail – Admin & User Validation System (Java CLI)
 
-ValidRail is a **Java-based command-line application** that simulates a secure user validation and registration system for a railway portal.  
-It includes admin login, credential updates, full input validation, and file-based data persistence.
+ValidRail is a **Java-based command-line application** that simulates a secure user validation and registration system for a railway portal.  It includes admin login, credential updates, full input validation, and file-based data persistence.
 
 ---
 
@@ -88,7 +87,3 @@ You can change or reset using the "Create New Admin" menu option.
 ## By 
 Aditya Mishra. 
 Happy Coding </>.
-
-
-
-
