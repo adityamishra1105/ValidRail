@@ -39,7 +39,7 @@ public class AssignmentProgram {
         }
     }
     private static void displayInitialMenu() {
-        System.out.println("\n--- Welcome to ValidRail – Admin & User Validation System ---");
+        System.out.println("\n--- Welcome to ValidRail : Admin & User Validation System ---");
         System.out.println("Select one of the following options:");
         System.out.println("1. Admin User Login");
         System.out.println("2. View User Login");
@@ -259,3 +259,7 @@ public class AssignmentProgram {
         return USERS_FILE;
     }
 }
+
+// this assignment if from internship at Centre for Railway Information System (CRIS)
+// here i worked on an internal CLI based application to streamline operations.
+// open for contributions
